@@ -47,12 +47,154 @@ table {
 	border-spacing: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
 /* END OF RESET */
 
 img{
-    width: 100px;
+    width: 100%;
 }
 
-*{
-    outline: 1px solid red;
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.image-container{
+
+    width: 40%;
+    background-image: url("../images/mtb_group.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner{
+    min-height: 8rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    margin-top: 20%;
+    background-color: rgba(0, 0, 0, 0.616); /* Transparent background */
+
+}
+.banner__logo{  
+    min-height: 7rem;
+    height: 100%;
+    width: 30%;
+    background-image: url("../images/odin-lined.png");
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner__text{
+    
+    display: flex;
+    align-items: center;
+    
+    font-family: Norse;
+    text-align: center;
+    height: 100%;
+    font-size: 6vw;
+    color: white;
+}
+
+.form-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f8fa;
+}
+
+
+.form-container__heading{
+    
+    padding-top: 6rem;
+    height: 35%;
+    width: 50%;
+    min-width: 30rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    
+    
+}
+.form-container__heading p{
+    margin: 1rem;
+    
+}
+
+
+
+.form-container__register-card{
+    height: 35%; 
+    min-width: 30rem;   
+    background-color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.form-container__register-card h2{
+    padding: 1rem 2rem 0 2rem;
+    font-size: 1.2rem;
+}
+
+
+.container input{
+    height: 1.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.3rem
+  }
+  .container input:invalid{
+    border: 1px solid red;
+
+  }
+
+  .container input:valid{
+    border: 1px solid 
+
+  }
+
+  .container input:focus{
+    /* background-color: red; */
+    outline: 1px solid #2b5333cc;
+    border: 1px solid #2b5333cc;
+  }
+
+
+
+
+.form-container__buttons{
+    padding: 2rem;
+    height: 30%;
+}
+
+.form-container__buttons__sign-up{
+    background-color: #2b5333cc;
+    margin-bottom: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.register-card__input{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+

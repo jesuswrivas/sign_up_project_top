@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
+
+
+
   <body>
+
     <main>
       <div class="image-container">
-        <div class="image-container__image">
-          <img src="../images/mtb_group.jpg" alt="" />
+        <div class="banner">
+            <div class="banner__logo"></div>
+            <div class="banner__text"> <h1>ODIN</h1></div>
         </div>
-        <div class="image-container__logo"></div>
       </div>
 
       <div class="form-container">
+
         <div class="form-container__heading">
           <p>
             Sign up to The Odin Project cycling community. We love programming,
@@ -31,58 +34,73 @@
           <p>Join us and let's meet on the mountain!</p>
         </div>
 
+
         <div class="form-container__register-card">
-          <div class="register-card__input">
-            <div class="container">
-              <label for="user_first_name">FIRST_NAME</label>
-              <input
-                type="text"
-                name="user_first_name"
-                required
-                placeholder="Thor"
-              />
-            </div>
-            <div class="container">
-              <label for="user_last_name">LAST_NAME</label>
-              <input
-                type="text"
-                name="user_last_name"
-                required
-                placeholder="Odinson"
-              />
-            </div>
-          </div>
-          <div class="register-card__input">
-            <div class="container">
-              <label for="user_email">EMAIL</label>
-              <input
-                type="email"
-                name="user_email"
-                placeholder="thor.odinson@odinmail.com"
-                required
-              />
-            </div>
-            <div class="container">
-              <label for="user_phone">PHONE NUMBER</label>
-              <input type="tel" name="user_phone" />
-            </div>
-          </div>
-          <div class="register-card__input">
-            <div class="container">
-              <label for="user_password">PASSWORD</label>
-              <input type="password" name="user_password" required />
-            </div>
-            <div class="container">
-              <label for="confirm_password">CONFIRM PASSWORD</label>
-              <input type="password" name="confirm_password" required />
-            </div>
-          </div>
+          
+
+          <form action="/form_submit" method="post">
+            <h2>Join us!</h2>
+
+              <div class="register-card__input">
+                <div class="container">
+                  <label for="user_first_name">FIRST_NAME</label>
+                  <input
+                    type="text"
+                    name="user_first_name"
+                    required
+                    placeholder="Thor"
+                  />
+                </div>
+                <div class="container">
+                  <label for="user_last_name">LAST_NAME</label>
+                  <input
+                    type="text"
+                    name="user_last_name"
+                    required
+                    placeholder="Odinson"
+                  />
+                </div>
+              </div>
+
+              <div class="register-card__input">
+                <div class="container">
+                  <label for="user_email">EMAIL</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="thor.odinson@odinmail.com"
+                    required
+                  />
+                </div>
+                <div class="container">
+                  <label for="user_phone">PHONE NUMBER</label>
+                  <input type="tel" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  title="Only digits"/>
+                </div>
+              </div>
+
+              <div class="register-card__input">
+                <div class="container">
+                  <label for="user_password">PASSWORD</label>
+                  <input type="password" name="user_password" required />
+                </div>
+                <div class="container">
+                  <label for="confirm_password">CONFIRM PASSWORD</label>
+                  <input type="password" name="confirm_password" required />
+                </div>
+              </div>
+          </form>
+
         </div>
 
-        <div class="form-container__buttons">
-          <button>Create Account</button>
-        </div>
+          <div class="form-container__buttons">
+            <button class="form-container__buttons__sign-up">Create Account</button>
+            <span>Already have an accouint?</span> <a href="">Log in</a>
+          </div>
+
+        </form>
+
       </div>
+      
     </main>
   </body>
 </html>
