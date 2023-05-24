@@ -67,7 +67,7 @@ main{
 .image-container{
 
     width: 40%;
-    background-image: url("../images/mtb_group.jpg");
+    background-image: url("https://raw.githubusercontent.com/jesuswrivas/sign_up_project_top/main/images/mtb_group.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -88,7 +88,7 @@ main{
     min-height: 7rem;
     height: 100%;
     width: 30%;
-    background-image: url("../images/odin-lined.png");
+    background-image: url("https://raw.githubusercontent.com/jesuswrivas/sign_up_project_top/main/images/odin-lined.png");
     background-size: cover;
     background-position: center;
     background-size: contain;
