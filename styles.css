@@ -140,6 +140,7 @@ main{
     background-color: white;
     font-size: 0.8rem;
     font-weight: 600;
+    box-shadow: 2px 18px 16px -7px rgba(0,0,0,0.1);
 }
 
 .form-container__register-card h2{
@@ -164,13 +165,18 @@ main{
   }
 
   .container input:focus{
-    /* background-color: red; */
-    outline: 1px solid #2b5333cc;
-    border: 1px solid #2b5333cc;
+
+    outline: 1px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
   }
 
 
-
+.password_message{
+    display: none;
+    color: red;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
 
 .form-container__buttons{
     padding: 2rem;
@@ -196,5 +202,9 @@ main{
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.wrong_input {
+    border: 1px solid red;  
 }
 

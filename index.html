@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    
     <title>Document</title>
   </head>
 
@@ -38,7 +38,7 @@
         <div class="form-container__register-card">
           
 
-          <form action="/form_submit" method="post">
+          <form action="/form_submit" method="post" id="user_form">
             <h2>Join us!</h2>
 
               <div class="register-card__input">
@@ -82,6 +82,7 @@
                 <div class="container">
                   <label for="user_password">PASSWORD</label>
                   <input type="password" name="user_password" required />
+                  <span class="password_message">*Password does not match</span>
                 </div>
                 <div class="container">
                   <label for="confirm_password">CONFIRM PASSWORD</label>
@@ -93,7 +94,7 @@
         </div>
 
           <div class="form-container__buttons">
-            <button class="form-container__buttons__sign-up">Create Account</button>
+            <button class="form-container__buttons__sign-up" form="user_form" type="submit">Create Account</button>
             <span>Already have an accouint?</span> <a href="">Log in</a>
           </div>
 
@@ -102,5 +103,6 @@
       </div>
       
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
